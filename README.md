@@ -30,6 +30,26 @@ Dual-Channel Relay Module Specifications
 · Relay maximum contact voltage – 250VAC, 30VDC
 · Relay maximum current – 10A
 
+**Methodology**
+The 4x3 keypad is connected to the Arduino Uno through digital pins 7 to 13. The LCD display is connected to the Arduino using an I2C module. The connections are
+●	GND to GND
+●	VCC to 5V
+●	SDA to A4(Analog Pin)
+●	SCL to A5(Analog Pin)
+The relay module is connected to Arduino through the following pins:
+●	GND to GND
+●	VCC to 5V
+●	IN1 to D3 (Digital Pin)
+●	IN2 to D2 (Digital Pin)
 
+**Progress:**
+1.	The LCD display is connected to the Arduino Uno using digital pins and tested.
+2.	The number of digital pins proved to be insufficient to connect both the LCD display and the keypad matrix.
+3.	The LCD display was soldered with an I2C module to reduce the number of digital pins to be connected.
+4.	The keypad matrix was connected to the Arduino module and was tested.
+5.	The Relay Module was connected to the Arduino module and was tested.
+6.	The whole circuit was connected on a breadboard and tested.
+7.	The final assembly was done and the circuit was soldered on a 10.5x8 zero board.
+8.	The loads were added and the project is ready for use.
 
-**ARDUINO CODE:-**Attached in the repository.
+**ARDUINO CODE**:-Attached in the repository.
